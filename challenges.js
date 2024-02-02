@@ -121,9 +121,7 @@ function findMissingLetter(array) {
   return missing
 }
 
-
-
-validParentheses("()()((()")
+// validParentheses("()()((()")
 
 function validParentheses(parens) {
   const array = parens.split("")
@@ -152,19 +150,18 @@ function validParentheses(parens) {
   }
 }
 
-// Multiples of 3 or 5 - 6 kyu 
+// Multiples of 3 or 5 - 6 kyu
 // https://www.codewars.com/kata/514b92a657cdc65150000006
 
-function solution(number){
+function solution(number) {
   let total = 0
-    for (let i=number-1; i>0; i--) {
-      if ((i % 3 == 0) || (i % 5 == 0)) {
-        total=total+i 
-      }
+  for (let i = number - 1; i > 0; i--) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      total = total + i
     }
-    return total
+  }
+  return total
 }
-
 
 // The Hashtag Generator - 5 kyu
 // https://www.codewars.com/kata/52449b062fb80683ec000024
@@ -184,8 +181,6 @@ function generateHashtag(str) {
   }
   return hash
 }
-
-
 
 // Dead Ants - 6 kyu
 // https://www.codewars.com/kata/57d5e850bfcdc545870000b7
@@ -215,8 +210,6 @@ deadAntCount = function (ants) {
   return 0
 }
 
-
-
 // Manhattan Distance - 6 kyu
 // https://www.codewars.com/kata/52998bf8caa22d98b800003a
 
@@ -232,8 +225,6 @@ function manhattanDistance(pointA, pointB) {
   return a + b
 }
 
-
-
 // Human Readable Time - 5 kyu
 // https://www.codewars.com/kata/52685f7382004e774f0001f7
 
@@ -245,29 +236,28 @@ function humanReadable(seconds) {
   return hour + ":" + minsRem + ":" + secs
 }
 
-
 // Pyramid Slide Down - 4 kyu
 // https://www.codewars.com/kata/551f23362ff852e2ab000037
 
-longestSlideDown([[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]])
+// longestSlideDown([[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]])
 
-longestSlideDown([
-  [75],
-  [95, 64],
-  [17, 47, 82],
-  [18, 35, 87, 10],
-  [20, 4, 82, 47, 65],
-  [19, 1, 23, 75, 3, 34],
-  [88, 2, 77, 73, 7, 63, 67],
-  [99, 65, 4, 28, 6, 16, 70, 92],
-  [41, 41, 26, 56, 83, 40, 80, 70, 33],
-  [41, 48, 72, 33, 47, 32, 37, 16, 94, 29],
-  [53, 71, 44, 65, 25, 43, 91, 52, 97, 51, 14],
-  [70, 11, 33, 28, 77, 73, 17, 78, 39, 68, 17, 57],
-  [91, 71, 52, 38, 17, 14, 91, 43, 58, 50, 27, 29, 48],
-  [63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
-  [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23],
-])
+// longestSlideDown([
+//   [75],
+//   [95, 64],
+//   [17, 47, 82],
+//   [18, 35, 87, 10],
+//   [20, 4, 82, 47, 65],
+//   [19, 1, 23, 75, 3, 34],
+//   [88, 2, 77, 73, 7, 63, 67],
+//   [99, 65, 4, 28, 6, 16, 70, 92],
+//   [41, 41, 26, 56, 83, 40, 80, 70, 33],
+//   [41, 48, 72, 33, 47, 32, 37, 16, 94, 29],
+//   [53, 71, 44, 65, 25, 43, 91, 52, 97, 51, 14],
+//   [70, 11, 33, 28, 77, 73, 17, 78, 39, 68, 17, 57],
+//   [91, 71, 52, 38, 17, 14, 91, 43, 58, 50, 27, 29, 48],
+//   [63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
+//   [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23],
+// ])
 
 function longestSlideDown(pyramid) {
   let total = 0
@@ -292,17 +282,14 @@ function longestSlideDown(pyramid) {
   return total
 }
 
-
 // Decimal to Binary
 let a = 123
-console.log(a.toString(2))
-
+// console.log(a.toString(2))
 
 // IBM HackerRank coding challenge #1
-getMinimumMoves([1, 2, 3], 4)
+// getMinimumMoves([1, 2, 3], 4)
 
 function getMinimumMoves(price, k) {
-
   let counter = 0
   let sortedArr = price.sort()
   let arrMed = price[Math.floor(price.length / 2)]
@@ -323,7 +310,6 @@ function getMinimumMoves(price, k) {
   console.log(counter)
   return counter
 }
-
 
 // IBM HackerRank coding challenge #2
 
@@ -357,7 +343,46 @@ function countNumbersWithoutRepeatingDigits(arr) {
   return count
 }
 
-const myNumbers = [123, 456, 789, 112, 223, 445]
-console.log("Count:", countNumbersWithoutRepeatingDigits(myNumbers))
+// const myNumbers = [123, 456, 789, 112, 223, 445]
+// console.log("Count:", countNumbersWithoutRepeatingDigits(myNumbers))
 
 
+
+// The lost beginning
+// https://www.codewars.com/kata/659af96994b858db10e1675f
+
+beginning("123456789101112131415")
+beginning("17181920")
+beginning("72637236")
+beginning("1112")
+beginning("91011")
+beginning("99100")
+
+function beginning(xs) {
+  let increasing = false
+
+  for (let i = 1; i < xs.length; i++) {
+    let part1 = xs.substr(0, i)
+    let part2 = Number(xs.substr(i, i))
+    let part2l = Number(xs.substr(i, i + 1))
+
+    if (Number(part1) + 1 == part2 || Number(part1) + 1 == part2l) {
+      let increment = Number(part1)
+      let string = increment.toString()
+
+      while (string.length < xs.length) {
+        increment = increment + 1
+        string = string + increment.toString()
+      }
+
+      if (string == xs) {
+        increasing = true
+        return Number(part1)
+      }
+    }
+  }
+
+  if (increasing == false) {
+    return Number(xs)
+  }
+}
